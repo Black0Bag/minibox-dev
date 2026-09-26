@@ -14,7 +14,7 @@ minibox/                     工作区根目录
 │   ├── .goreleaser.yaml     跨平台发布配置
 │   ├── VERSION              唯一版本源
 │   └── CHANGELOG.md         版本变更记录
-├── minibox-android/         Android 工程（当前仅文档）
+├── minibox-android/         Android 工程（源码 + 测试，v0.5.0）
 ├── minibox-dev/             产品决策和路线图
 │   ├── docs/                工作流核心文档（goal/plan/rules/structure）
 │   └── dev/                 路线图、系统设计、前端基准
@@ -41,7 +41,7 @@ minibox/                     工作区根目录
 ## 依赖与外部接口
 
 - Go 后端：SQLite（modernc.org/sqlite）、OpenAI 兼容 LLM、WebSocket JSON-RPC、SSE。
-- Android 前端：REST + SSE + WebSocket 三通道客户端（待实现）。
+- Android 前端：REST + SSE + WebSocket 三通道客户端（已实现，F0–F3a）。
 - CI/CD：GitHub Actions（test/race/lint/audit）+ GoReleaser。
 - 本仓库没有运行时依赖或凭据。
 

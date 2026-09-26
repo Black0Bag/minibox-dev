@@ -5,7 +5,7 @@
 1. 后端版本管理对齐：VERSION 文件 + CI 校验 + GoReleaser 集成（已完成 v0.1.0-v0.1.2）
 2. 工作区文档治理：Skill 门禁对齐 + 开发链路规则回填（已完成）
 3. 后端深度优化打磨：http_handlers.go 拆分 + 4 包补测试（已完成 v0.2.0-v0.2.1）
-4. Android 前端工程化：基于稳定后端进行前端开发（待启动）
+4. Android 前端工程化：基于稳定后端进行前端开发（进行中，v0.5.0）
 
 ## 任务拆解
 
@@ -21,17 +21,18 @@
 - 输入：后端体检报告（2026-08-30）+ 当前代码实测
 - 输出：CI 全绿 + Release v0.2.0/v0.2.1 发布成功
 
-### M4：Android 前端工程化（待启动）
+### M4：Android 前端工程化（进行中）
 
 - 目标：Gradle 脚手架 + CI + 首版 APK
+- 进展：Gradle 工程、CI 与 F0–F3a 特性已交付（v0.1.0–v0.5.0，PR 均 CI 全绿后合并）
 - 输入：后端稳定契约（v0.2.1）+ minibile T03A cloud_build_release 方案
-- 输出：Android CI 全绿 + 首版 APK Release
+- 输出：Android CI 全绿 + 首版 APK Release（APK 签名发布待完成）
 
 ## 验收节点
 
 - M2：ensure_core_docs.py 全 EXISTS，无 INVALID ✅
 - M3：CI 四阶段全绿，Release v0.2.1 产出跨平台二进制 ✅
-- M4：Android CI 全绿，首版 APK 签名发布
+- M4：Android CI 已随 F0–F3a 各 PR 全绿；首版 APK 签名发布待完成
 
 ## 风险与回滚
 
